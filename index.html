@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HI PO</title>
+    <style>
+        body {
+            background-color: #ffebeb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+        .envelope {
+            position: relative;
+            width: 200px;
+            height: 150px;
+            background: #e0f7ff;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding-top: 50px;
+            transition: 0.5s;
+        }
+        .envelope:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 80px solid #ff5e78;
+        }
+        .message {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .envelope:hover .message {
+            opacity: 1;
+            top: -50px;
+        }
+        .message h1 {
+            color: #ff5e78;
+            font-size: 18px;
+        }
+        .message p {
+            color: #4a90e2;
+            font-size: 16px;
+        }
+        .signature {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope">
+        <div class="message">
+            <h1>Hey, I'm so proud of you! 💙❤️</h1>
+            <p>I know things haven’t been easy, but you’ve been doing your best, and that’s more than enough. Please take a moment to rest, breathe, and remind yourself that you are doing amazing. You deserve kindness, love, and peace. Keep going, but don’t forget to take care of yourself too. 💖</p>
+            <p class="signature">- By Jea</p>
+        </div>
+    </div>
+</body>
+</html>
